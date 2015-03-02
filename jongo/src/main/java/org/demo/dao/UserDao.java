@@ -42,7 +42,7 @@ public class UserDao {
     }
 
     public void remove(User user) {
-        getUserCollection().remove("{_id: '"+user.getLogin()+"'}");
+         getUserCollection().remove("{_id: '"+user.getLogin()+"'}");
     }
 
     public List<User> findAll() {
@@ -55,7 +55,7 @@ public class UserDao {
     }
 
     public User findByLogin(String login) {
-        User user = getUserCollection().findOne("{_id: '"+login+"'}").as(User.class);;
+        User user = getUserCollection().findOne("{_id: '"+login+"'}").as(User.class);
         return user;
     }
 
