@@ -12,7 +12,7 @@ import org.junit.Test;
 /**
  * Test
  */
-public class UserDaoIT {
+public class UserDaoTest {
 
     String host = "localhost";
     String databaseName = "test";
