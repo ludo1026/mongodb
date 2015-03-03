@@ -5,3 +5,5 @@ Sample data persistance with :
 * Morphia
 * MongoJack
 * Jongo
+* Spring Data - MongoTemplate
+* Spring Data - Repository
