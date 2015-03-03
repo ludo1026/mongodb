@@ -5,7 +5,6 @@ import org.demo.domain.User;
 import org.mongojack.JacksonDBCollection;
 
 import java.net.UnknownHostException;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -13,7 +12,7 @@ import java.util.List;
  */
 public class UserDao {
 
-    public static String USERS = "users";
+    public static String COLLECTION = "users";
 
     private final String host;
     private final String databaseName;
@@ -27,7 +26,7 @@ public class UserDao {
         try {
             Mongo mongo = new MongoClient(host);
             DB db = mongo.getDB(databaseName);
-            DBCollection dbCollection = db.getCollection(USERS);
+            DBCollection dbCollection = db.getCollection(COLLECTION);
             JacksonDBCollection<User, String> jacksonDBCollection =
                     JacksonDBCollection.wrap(dbCollection, User.class, String.class);
             return jacksonDBCollection;
