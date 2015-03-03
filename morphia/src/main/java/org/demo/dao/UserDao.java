@@ -17,7 +17,7 @@ import java.util.List;
  */
 public class UserDao {
 
-    public static String USERS = "users";
+    public static String COLLECTION = "users";
 
     private final String host;
     private final String databaseName;
