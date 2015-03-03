@@ -1,6 +1,6 @@
 # MongoDB
 
-Projects :
+Sample data persistance with :
 * MongoDB Java Driver
 * Morphia
 * MongoJack
