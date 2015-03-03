@@ -1,8 +1,8 @@
 package org.demo.domain;
 
-import jdk.nashorn.internal.ir.annotations.Reference;
 import org.mongodb.morphia.annotations.Entity;
 import org.mongodb.morphia.annotations.Id;
+import org.mongodb.morphia.annotations.Reference;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * User
  */
-@Entity
+@Entity("users")
 public class User implements Serializable {
 
     @Id
