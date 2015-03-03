@@ -2,8 +2,8 @@
 
 Sample data persistance with :
 * [MongoDB Java Driver](java-driver)
-* Morphia
-* MongoJack
-* Jongo
-* Spring Data - MongoTemplate
-* Spring Data - Repository
+* [Morphia](morphia)
+* [MongoJack](mongojack)
+* [Jongo](jongo)
+* [Spring Data - MongoTemplate](spring-data-mongotemplate)
+* [Spring Data - Repository](spring-data-repository)
